@@ -343,7 +343,8 @@
 
 
 
-                <!-- Prices -->
+                <!-- Total Prices -->
+
                 <div class="flex-1">
 
                     <h2 class="font-bold text-xl">Select Your Seat</h2>
@@ -399,7 +400,7 @@
                     <!-- Passenger Name -->
                     <label class="form-control w-full mt-5">
                         <div class="label">
-                          <span class="label-text font-bold">Passenger Name*</span>
+                            <span class="label-text font-bold">Passenger Name*</span>
                         </div>
                         <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
                     </label>
@@ -407,18 +408,26 @@
                     <!-- Phone Number -->
                     <label class="form-control w-full mt-5">
                         <div class="label">
-                          <span class="label-text font-bold">Phone Number*</span>
+                            <span class="label-text font-bold">Phone Number*</span>
                         </div>
-                        <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
+                        <input type="number" placeholder="Enter your phone number"
+                            class="input input-bordered w-full" />
                     </label>
 
                     <!-- Email ID -->
                     <label class="form-control w-full mt-5">
                         <div class="label">
-                          <span class="label-text font-bold">Email ID*</span>
+                            <span class="label-text font-bold">Email ID*</span>
                         </div>
                         <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
                     </label>
+
+                    <button class="btn w-full text-center text-white mt-5 bg-[#1DD100] text-lg font-bold">Next</button>
+
+                    <div class="flex justify-between mt-3">
+                        <u>Terms and Conditions</u>
+                        <u>Cancellation Policy</u>
+                    </div>
 
                 </div>
 
@@ -429,8 +438,31 @@
 
     </main>
 
+    <footer class="footer p-10 bg-[#030712] text-white">
+        <aside>
+            <p class="text-2xl lg:text-5xl mb-2">UF-O</p>
+            <p>UF-O is a digital platform to make your <br> daily commuting better.</p>
+        </aside>
 
+        <nav>
+            <h6 class="text-lg">Download our app</h6>
+            <div class="grid grid-flow-col gap-4">
+                <div class="border-2 border-white flex gap-2 p-3 rounded-md">
+                    <div>
+                        <img src="/images/playstore.png" alt="" class="text-white">
+                    </div>
+                    <div>
+                        <p>GET IT ON <br> <span class="text-lg">Google Play</span></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
+        <aside>
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+        
+    </footer>
 
     <script src="script.js"></script>
 </body>
