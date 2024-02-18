@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>UFO Paribahan</title>
+</head>
+
+<body class="w-full">
+    <header class="container mx-auto">
+        <!-- top header -->
+        <div class="mb-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">UF-O</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#1DD100] font-bold border-1 border-[#1DD100] rounded-xl text-lg">Bus <img
+                            src="./images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main header -->
+        <div class="mb-3">
+            <div class="hero min-h-screen" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="mb-5 text-4xl lg:text-6xl font-bold">End-to-End Travel with</h1>
+                        <p class="text-2xl mb-2 lg:text-4xl">UF-O Paribahan</p>
+                        <p class="mb-5">We provide the best experiance to the passenger. We are welcoming you with our
+                            warm heart.</p>
+                        <button class="btn bg-[#1DD100] text-lg rounded-xl"><a href="#tickets">Buy Tickets</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Infos -->
+        <div class="flex flex-col lg:flex-row gap-10 lg:relative lg:bottom-24 lg:justify-center items-center lg:mb-0 mb-7">
+
+            <div class="card card-side bg-base-100 shadow-xl w-80 p-4 rounded-2xl border-4 border-b-green-500">
+                <figure><img src="./images/people.png" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title font-bold text-4xl">500k+</h2>
+                    <p>Registered Users</p>
+                </div>
+            </div>
+
+            <div class="card card-side bg-base-100 shadow-xl w-80 p-4 rounded-2xl border-4 border-b-green-500">
+                <figure><img src="./images/ticket-cupon.png" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title font-bold text-4xl">1.7 lacks</h2>
+                    <p>Tickets sold</p>
+                </div>
+            </div>
+
+            <div class="card card-side bg-base-100 shadow-xl w-80 p-4 rounded-2xl border-4 border-b-green-500">
+                <figure><img src="./images/stoppage.png" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title font-bold text-4xl">80k+</h2>
+                    <p>Rental partners</p>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="">
+
+        <!-- Offer Section -->
+        <section class="mb-5 container mx-auto">
+            <h1 class="text-center text-4xl font-bold mb-7">Best offers for you</h1>
+
+            <div class="flex flex-col lg:flex-row lg:justify-around lg:gap-10">
+                <!-- 15% -->
+                <div class="bg-[#FFBF0F] flex justify-between rounded-xl px-4">
+                    <div class="flex flex-col justify-center">
+                        <h2 class="font-bold text-3xl">15% OFF</h2>
+                        <h5 class="font-bold text-lg">on your next purchase</h5>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class="flex flex-col justify-center w-40">
+                        <h4 class="font-bold text-3xl">NEW15</h4>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                
+                <!-- 20% -->
+                <div class="bg-[#F78C9C] flex justify-between rounded-xl px-4">
+                    <div class="flex flex-col justify-center">
+                        <h2 class="font-bold text-3xl">20% OFF</h2>
+                        <h5 class="font-bold text-lg">on your next purchase</h5>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class="flex flex-col justify-center w-40">
+                        <h4 class="font-bold text-3xl">Couple 20</h4>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-10 flex justify-center">
+                <button class="btn bg-white border-2 border-green-500 text-green-500 text-lg">See All Offers</button>
+            </div>
+
+        </section>
+
+        <!-- Ticket Section -->
+    
+        <section id="tickets" class="border-2 border-t-green-500 rounded-3xl mx-auto bg-[#F7F8F8]">
+            <div class="mt-32 flex flex-col items-center mb-12">
+                <h1 class="font-bold text-4xl">UF-O Paribahan</h1>
+                <p>You can buy tickets sitting at your home without any hassle. </p>
+            </div>
+
+            <!-- Ticket Info -->
+                <div class="bg-white flex justify-between rounded-xl px-4 mt-5 container mx-auto">
+                    <div class="flex flex-col justify-center">
+                        <h2 class="font-bold text-3xl">15% OFF</h2>
+                        <h5 class="font-bold text-lg">on your next purchase</h5>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div><img src="./images/info-devider.png" alt=""></div>
+                    <div class="flex flex-col justify-center">
+                        <h4 class="font-bold text-3xl">NEW15</h4>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+
+        </section>
+
+    </main>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
