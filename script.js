@@ -37,12 +37,67 @@ document.getElementById("ticket-seats").addEventListener('click', (event)=>{
 
         document.getElementById("totalPrice").innerText = totalAmount;
 
+
+        /* Setting Grand Total price using cupon */
+
+       document.getElementById("apply-cupon").addEventListener('click', ()=>{
+            const cuponInput = document.getElementById("cuponInput").value;
+
+            const new15 = getTextElement("new15");
+            const couple20 = getTextElement("couple20");
+
+            let grandTotal = 0;
+
+            if(new15 === cuponInput){
+                grandTotal = totalAmount - (totalAmount*0.15);
+            }
+
+            else if(couple20 === cuponInput){
+                grandTotal = totalAmount - (totalAmount*0.2);
+
+            } 
+            else{
+                grandTotal = totalAmount;
+            }  
+
+            replaceValue("grandTotal", grandTotal);
+
+            const cuponSection = document.getElementById("cupon-section");
+
+            cuponSection.classList.add("hidden");
+            
+       })
+
     }
    
 
 })
 
 
+/* making the whole page hidden */
+
+const phoneNumber = document.getElementById("phone-number").value;
+const nextPage = document.getElementById("next-page");
+
+    nextPage.addEventListener("click", ()=>{
+       document.getElementById("header-hide").classList.add("hidden");
+       document.getElementById("main-hide").classList.add("hidden");
+       document.getElementById("footer-hide").classList.add("hidden");
+
+       document.getElementById("show-main").classList.remove("hidden");
+    })
+
+
+
+
+/* Getting Element from the text field */
+
+function getTextElement(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+
+    return text; 
+}
 
 
 /* Calling an element and replacing with new value */
@@ -51,7 +106,6 @@ function replaceValue(elementId, value){
     const element = document.getElementById(elementId);
     element.innerText = value;
 }
-
 
 
 /* Calling the seat count and converting it to integer */
